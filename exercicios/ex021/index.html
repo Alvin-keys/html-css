@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de um Site</title>
+    <style>
+        body{ background-color: #adacac;
+              margin: 0px /*deixa sem espaço na lateral do body*/
+        }
+
+        header{background-color: #ffffff;
+            margin: 10px;
+            padding: 10px}
+
+        nav{background-color: #797878;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px #00000065;
+        /*Aqui tirar 50% da transparencia do preto*/}
+        
+        nav > a{text-decoration: none;
+                margin-right: 30px;
+                color: #ffffff;}
+        
+        nav > a:hover{
+                text-decoration: underline;
+
+        }
+
+        main{ background-color: white;
+              padding: 10px;
+              margin: 10px;
+              border-radius: 20px 0px;
+              /* 20px 0px é legal*/
+              box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.555);}
+
+        footer{background-color: black;
+               color: #b3b1b1;
+               padding: 2px;
+               margin: 0px}
+        article{background-color: lightgray;
+                padding: 5px}
+
+        article > aside{background-color: #444343;}
+
+        #assuntos{ padding: 2px;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+   <main>
+        <section id="assuntos">
+                Esporte, política e Tecnologia
+        </section>
+        
+        <section id="notícias">
+            <article>
+                <h2>Primeiro Paragrafo</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias earum numquam architecto ad! Repellat suscipit rerum excepturi explicabo dignissimos fuga, quidem placeat, ducimus, aspernatur saepe eligendi earum. Illo, nisi asperiores.</p>
+            </article>
+
+            <article>
+                <h2>Segundo Paragrafo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ex quos esse delectus molestiae. Reiciendis facilis repellendus esse pariatur dolore tempora ducimus veritatis quae repudiandae, mollitia doloremque, enim expedita rem.</p>
+                <aside>
+                    Artigo escrito por Tanandra Feitosa
+                </aside>
+            </article>
+        </section>
+
+        
+   </main> 
+
+   <footer>
+        Desenvolvido por Alvino Júnior
+   </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .categoria { margin-bottom: 20px; }
+        .item { display: flex; justify-content: space-between; align-items: center; margin: 5px 0; }
+        #carrinho { margin-top: 20px; border-top: 2px solid #000; padding-top: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Cardápio</h2>
+    
+    <div class="categoria" id="hamburgueres">
+        <h3>Hambúrgueres</h3>
+        <div class="item"><input type="checkbox" class="item-selecionado" data-nome="Cheeseburger" data-preco="15.00"> Cheeseburger - R$ 15,00</div>
+        <div class="item"><input type="checkbox" class="item-selecionado" data-nome="X-Bacon" data-preco="18.00"> X-Bacon - R$ 18,00</div>
+    </div>
+    
+    <div class="categoria" id="bebidas">
+        <h3>Bebidas</h3>
+        <div class="item"><input type="checkbox" class="item-selecionado" data-nome="Refrigerante" data-preco="5.00"> Refrigerante - R$ 5,00</div>
+        <div class="item"><input type="checkbox" class="item-selecionado" data-nome="Suco Natural" data-preco="8.00"> Suco Natural - R$ 8,00</div>
+    </div>
+    
+    <button onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+    
+    <div id="carrinho">
+        <h3>Carrinho</h3>
+        <ul id="lista-carrinho"></ul>
+        <p>Total: R$ <span id="total">0.00</span></p>
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+    </div>
+    
+    <script>
+        let carrinho = [];
+        function adicionarAoCarrinho() {
+            let itens = document.querySelectorAll('.item-selecionado:checked');
+            carrinho = [];
+            let total = 0;
+            itens.forEach(item => {
+                let nome = item.getAttribute('data-nome');
+                let preco = parseFloat(item.getAttribute('data-preco'));
+                carrinho.push({ nome, preco });
+                total += preco;
+            });
+            atualizarCarrinho(total);
+        }
+
+        function atualizarCarrinho(total) {
+            let lista = document.getElementById('lista-carrinho');
+            lista.innerHTML = '';
+            carrinho.forEach(item => {
+                let li = document.createElement('li');
+                li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+                lista.appendChild(li);
+            });
+            document.getElementById('total').textContent = total.toFixed(2);
+        }
+
+        function finalizarPedido() {
+            if (carrinho.length === 0) {
+                alert('Seu carrinho está vazio!');
+                return;
+            }
+            let nome = prompt('Informe seu nome completo:');
+            let endereco = prompt('Informe seu endereço para entrega:');
+            let pagamento = prompt('Escolha a forma de pagamento: Cartão (débito/crédito) ou Pix');
+            if (nome && endereco && pagamento) {
+                alert(`Pedido confirmado! Nome: ${nome}\nEndereço: ${endereco}\nPagamento: ${pagamento}\nTotal: R$ ${document.getElementById('total').textContent}`);
+            } else {
+                alert('Pedido cancelado. Preencha todas as informações.');
+            }
+        }
+    </script>
+</body>
+</html>

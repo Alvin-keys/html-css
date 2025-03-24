@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "IDroid";
+    src: url('../desafio010/idroid/IDroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{ 
+    background-color: #228b22;
+    text-align: center;
+    color: white;
+    font-family: 'IDdroid';
+    padding: 20px;
+    
+}
+
+nav {
+    text-decoration: none;
+    text-align: left;
+    font-size: small;
+    
+
+    
+}
+
+#subtitulo{
+    color: #228b22;
+    padding: 4px;
+    margin: 0px;
+    font-size: xx-large;
+    text-indent: 30px;
+    
+}
+
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+nav > a:visited {
+    color: white;
+}
+
+body{
+    background-color: rgb(128, 199, 128);
+    margin: 0px;
+    font-family: 'IDdroid';
+    
+}
+
+main{
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.514);
+   
+}
+
+img{
+    width: 100%;
+}
+
+
+section{
+    background-color: white;
+    padding: 30px;
+}
+
+h1{
+    color: #ffffff;
+}
+h2{
+    color: #228b22;
+    background-color: rgb(172, 253, 185);
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+
+}
+
+aside{
+    background-color: #b1e4b1;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: justify;
+
+
+}
+
+aside > p {
+    background-color: #228b22;
+    color: white;
+    margin: 0px;
+}
+
+aside > p2 {
+    text-indent: 30px;
+    
+
+}
+footer{
+    background-color: #228b22;
+    margin: 0px;
+    padding: 10px;
+}
+
+
+

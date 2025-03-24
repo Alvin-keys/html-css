@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+h2 {text-align: center; color: brown;}
+
+h1 {color: blue;}
+
+p1 {background-color: #0885f300; font-size: 20px; text-align: center;}
+
+p { color: #005032; background-color: #a47ec960;}
+
+body {background-color: #000000;}
+
+
+
+/*Aqui um arquivo CSS controla todas as páginas!*/

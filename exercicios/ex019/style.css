@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+/* Todo id em html = # no CSS
+    Toda class em html = . no CSS */
+
+/* só pode usar 1 id por documento html(pag)
+    class é para quando vc quer a msm
+    formatação para mais de 1 parametro */
+
+body{
+    background-color: #a3f3d8;
+
+}
+
+h1{
+    color: rgb(1, 107, 49);
+}
+
+h2{ 
+    color: #058f61; 
+
+}
+
+h1#principal{
+    text-align: center;
+    color: white;
+    background-color: #058f61;
+
+}
+
+p{
+    text-indent: 30px;
+
+}
+.destaque{
+    color: #058f61;
+
+}
+.basico{
+color: #8f0505;
+background-color: rgb(143, 199, 201);
+}
