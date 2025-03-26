@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+
+        #conteiner{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /*preeche todo espaço da caixa*/
+            background-color: blueviolet;
+            height: 96vh;
+            padding: 10px;
+            position: relative;
+
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            background-color: yellow;
+            height: 200px;
+            width: 400px;
+            position: absolute;
+            /* qdo vc usa absolute pode mexer na posição*/
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /*para colocar a caixa de dentro no meio da caixa
+            de fora tem que usar essas configurações*/
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="conteiner">
+
+        <article id="conteudo">
+
+
+        </article>
+
+
+    </section>
+    
+</body>
+</html>
