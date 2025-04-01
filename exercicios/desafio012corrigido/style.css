@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, Sans-Serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
 
 *{
     padding: 0px;
@@ -9,8 +18,10 @@ html, body{
 
     min-height: 100vh; /* se for largura é 100 view width */
     background-color: darkgray;
+    font-family: var(--fonte1);
 
 }
+
 
 header{
     background-color: black;
@@ -24,7 +35,7 @@ header > h1 {
     font-size: 10vw; /* 'vw' a fonte aumenta e diminui junto com a janela.
     Se for usado 10em a fonte permancece tamanho fixo com aumento e diminuição da janela
     */
-
+    font-family: var(--fonte2);
 }
 
 header > p {
@@ -48,6 +59,11 @@ section{
     padding-left: 30px;
     padding-bottom: 10vh; /*afasta 10% da height da tela*/
     line-height: 2em; /*Espaçamento duplo*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+    
+     
+    
 }
 section.normal{
 
@@ -60,8 +76,10 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px; /*largura fixa*/
+    /*width: 400px; largura fixa*/
     background-color: rgba(0, 0, 0, 0.301);
+    display: inline-block;/*caixa se adapta ao conteudo*/
+    padding: 5px;
 
 
 
