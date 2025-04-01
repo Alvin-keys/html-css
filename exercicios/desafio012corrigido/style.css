@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root{
-    --fonte1: Verdana, Geneva, Tahoma, Sans-Serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
+    --fonte1: Verdana, Geneva, Tahoma, Sans-Serif; /*Fonte default*/
+    --fonte2: 'Passion One', cursive; /*Fonte copiada do google*/
+    --fonte3: 'Sriracha', cursive; /*Fonte copiada do google*/
 }
 
 *{
@@ -18,7 +18,7 @@ html, body{
 
     min-height: 100vh; /* se for largura é 100 view width */
     background-color: darkgray;
-    font-family: var(--fonte1);
+    font-family: var(--fonte1); /*Chama a fonte criada no root*/
 
 }
 
@@ -31,10 +31,8 @@ header{
 
 header > h1 {
     padding-top: 50px;
-    font-variant: small-caps; /*Mantem tudo maiusculo mais aumenta as primeiras. Outra forma text transform: uppercase*/
-    font-size: 10vw; /* 'vw' a fonte aumenta e diminui junto com a janela.
-    Se for usado 10em a fonte permancece tamanho fixo com aumento e diminuição da janela
-    */
+    font-variant: small-caps; /*Tudo maiusculo + aumenta a primeira. Outra forma, text transform: uppercase*/
+    font-size: 10vw; /* 'vw' a fonte aumenta ou diminui junto com a janela. 10'em' o tamanho permanece fixo*/
     font-family: var(--fonte2);
 }
 
@@ -46,12 +44,12 @@ header > p {
 a{  
     color: white;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: bolder; /*negrito*/
 
 }
 
 a:hover  {
-    text-decoration: underline;
+    text-decoration: underline; /*qdo passa mouse em cima*/
 }
 
 section{
@@ -60,30 +58,53 @@ section{
     padding-bottom: 10vh; /*afasta 10% da height da tela*/
     line-height: 2em; /*Espaçamento duplo*/
     font-family: var(--fonte3);
-    font-size: 3.5vw;
-    
-     
-    
+    font-size: 3.5vw; /*Fonte aumenta junto com a janela*/
 }
+
+section > p{
+  padding-bottom: 2em;  
+
+}
+
 section.normal{
 
     background-color: white;
     color: black ;
 }
+
 section.imagem{
     background-color: rgb(75, 74, 74);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);/*Sombra na caixa*/
+    /*inset: borda para dentro*/
+    background-size: cover;/*img se adequa*/
+    background-attachment: fixed; /*Fixa a imagem*/
+    
 }
 
 section.imagem > p{
-    /*width: 400px; largura fixa*/
-    background-color: rgba(0, 0, 0, 0.301);
+    /*width: 400px; seria largura fixa*/
+    background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;/*caixa se adapta ao conteudo*/
     padding: 5px;
+    text-shadow: 1px 1px 0px black;/*Sombra no texto*/
+}
 
+section#img01{
 
+    background-image: url(imagens/background001.jpg);
+    background-position: right center; /*mostra parte mais legal da imagem*/
+    
 
 }
+section#img02{
+
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    
+
+}
+
 footer{
     background-color: black;
     color: white;
