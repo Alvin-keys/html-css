@@ -21,5 +21,55 @@ header{
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*Mantem tudo maiusculo mais aumenta as primeiras. Outra forma text transform: uppercase*/
+    font-size: 10vw; /* 'vw' a fonte aumenta e diminui junto com a janela.
+    Se for usado 10em a fonte permancece tamanho fixo com aumento e diminuição da janela
+    */
+
+}
+
+header > p {
+    padding-bottom: 50px;
+
+}
+
+a{  
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+a:hover  {
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-left: 30px;
+    padding-bottom: 10vh; /*afasta 10% da height da tela*/
+    line-height: 2em; /*Espaçamento duplo*/
+}
+section.normal{
+
+    background-color: white;
+    color: black ;
+}
+section.imagem{
+    background-color: rgb(75, 74, 74);
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px; /*largura fixa*/
+    background-color: rgba(0, 0, 0, 0.301);
+
+
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px
 
 }
