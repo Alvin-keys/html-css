@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+
+    min-height: 100vh; /* se for largura é 100 view width */
+    background-color: darkgray;
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /*Mantem tudo maiusculo mais aumenta as primeiras. Outra forma text transform: uppercase*/
+
+}
