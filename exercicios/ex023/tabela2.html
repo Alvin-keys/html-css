@@ -8,16 +8,23 @@
     
     table{
         width: 400px;
+        font-family: Arial, Helvetica, sans-serif;
     
     }
 
+    tbody > tr:nth-child(2n){
+        background-color: lightgray;
+        /*nth-child(2n,3n...) cria efeito zebrado. Tbm pode por par ou impar (even, odd)*/
+
+
+    }
     td, th{
 
         border: 1px solid black;
     }
    
     thead,tfoot{
-        background-color: gray;
+        background-color: rgb(65, 64, 64);
         color: white;
 
     }
@@ -26,7 +33,14 @@
 
         text-align: right;
     }
+    caption{
+        padding: 10px;
+        background-color: lightgray;
+        color: black;
+        font-weight: bolder;
 
+
+    }
     </style>
 </head>
 <body>
@@ -44,11 +58,11 @@
     -->
     <table>
 
-
+        <caption>População das Unidade Federativas</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 80px;">População</th> <!--Configuração pontual na largura-->
+                <th scope="col" style="width: 90px;">População</th> <!--Configuração pontual na largura-->
             </tr>
 
 
