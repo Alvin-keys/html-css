@@ -81,6 +81,7 @@ section.imagem{
     background-attachment: fixed; /*Fixa a imagem*/
     
 }
+/*background-attachment: fixed: Isso faz o fundo ficar fixo enquanto o conteúdo da página rola, criando o efeito de parallax.*/
 
 section.imagem > p{
     /*width: 400px; seria largura fixa*/
