@@ -10,7 +10,7 @@
         border-collapse: collapse;
         /* Por padrão, as bordas são afastadas. Isso junta e forma a tabela*/
         width: 400px;
-        height: 100px;
+        height: 200px;
 
       }
       td{
@@ -24,7 +24,10 @@
       }
       td.dado{
         background-color: rgba(255, 251, 0, 0.719);
-
+      }
+      td.numero{
+        text-align: center; /*alinhamento horizontal*/
+        vertical-align: middle;/*alinhamento vertical: top, middle, bottom*/
 
       }
     </style>
@@ -45,13 +48,13 @@
         
         <tr> <!--Linha 1-->
             <td>Alvino</td>
-            <td>41 anos</td>
+            <td class="numero">41 </td>
             <td>Analista</td>
         </tr>
 
         <tr><!--Linha 2-->
           <td>Tanandra</td>
-          <td>35 anos</td>
+          <td class="numero">35 </td>
           <td class="dado">Psicóloga</td>
         </tr>
 
