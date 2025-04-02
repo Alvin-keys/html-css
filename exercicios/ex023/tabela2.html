@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construindo Tabelas Grandes</title>
+    <style> 
+    
+    table{
+        width: 400px;
+    
+    }
+
+    td, th{
+
+        border: 1px solid black;
+    }
+   
+    thead,tfoot{
+        background-color: gray;
+        color: white;
+
+    }
+
+    td.number{
+
+        text-align: right;
+    }
+
+    </style>
+</head>
+<body>
+    <!--Anatomia
+    
+    TABLE
+    Caption (não aceita td, th): fica em cima da tabela
+    Thead: tr, td, th
+    Tbody: tr, td, th
+    Tfoot: tr, td, th
+
+    outra coisa é definir semanticamente para o google sua tabela
+    usando para isso o scope="" dizendo que aquele th é o escopo da 'col' ou da 'row' desses tds por ex!
+    
+    -->
+    <table>
+
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 80px;">População</th> <!--Configuração pontual na largura-->
+            </tr>
+
+
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">45 973 194</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">21 322 691</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="number">14 850 513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="number">11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="number">11 229 915	</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="number">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="number">9 233 656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="number">8 664 306	</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="number">8 058 441</td>
+                
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="number">7 350 483</td>
+            </tr>
+
+
+        </tbody>
+
+
+        <tfoot>
+            <th scope="row">Total da População</th>
+            <td class="number"><strong>210 147 125</strong></td>
+
+        </tfoot>
+
+
+
+    </table>
+    
+</body>
+</html>
