@@ -9,6 +9,7 @@
     table{
         width: 400px;
         font-family: Arial, Helvetica, sans-serif;
+        position: relative;
     
     }
 
@@ -38,7 +39,14 @@
         background-color: lightgray;
         color: black;
         font-weight: bolder;
+    }
 
+    thead > tr > th {
+        position: sticky; 
+        top: 0;
+        /*Vai grudar o th na posição 0 */
+        background-color: rgb(65, 64, 64);
+        /*para levar o background junto*/
 
     }
     </style>
@@ -55,6 +63,12 @@
     outra coisa é definir semanticamente para o google sua tabela
     usando para isso o scope="" dizendo que aquele th é o escopo da 'col' ou da 'row' desses tds por ex!
     
+    -->
+
+    <!--Adicionando o Efeito Cabeçalho Fixo 
+             
+        table: position: relative;
+        thead > tr > th: position: sticky; top: 0 (fixa no topo 0); background: add cor pra ele levar junto! 
     -->
     <table>
 
@@ -116,8 +130,71 @@
                 <td>Goiás</td>
                 <td class="number">7 350 483</td>
             </tr>
-
-
+            <tr>
+                <td>Maranhão</td>
+                <td class="number">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="number">4 281 209</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="number">4 145 040	</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="number">4 102 129</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="number">3 836 399</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="number">3 446 071</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="number">3 375 646</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="number">3 220 104</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="number">2 982 818</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="number">2 901 895</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="number">2 291 077</td>
+            </tr>
+            <tr>
+                <td>rondonia</td>
+                <td class="number">1 746 227</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="number">1 577 342</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="number">880 631	</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">802 837</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">716 793</td>
+            </tr>
+          
         </tbody>
 
 
@@ -131,5 +208,18 @@
 
     </table>
     
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis minima debitis, ab optio atque? Qui, facere! Temporibus ex at nisi natus fugit, corporis consequuntur blanditiis laborum nulla, recusandae officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, commodi! Iure adipisci laudantium, nobis similique rerum molestias libero optio sunt, veritatis minus cupiditate et qui consectetur velit at deserunt blanditiis.
+
 </body>
 </html>
