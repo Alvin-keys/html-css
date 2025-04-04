@@ -1,0 +1,195 @@
+O código apresentado é um sistema simples de cardápio digital para um site, permitindo que os usuários escolham produtos, adicionem ao carrinho e finalizem o pedido.
+
+A estrutura começa com a definição do documento HTML5 e a especificação do idioma como português do Brasil. No cabeçalho (), são incluídas configurações como a codificação de caracteres (UTF-8) e a adaptação para dispositivos móveis. Além disso, um pequeno bloco de CSS é inserido para definir o estilo da página, melhorando a organização visual.
+
+No corpo do documento (), há um título “Cardápio” e duas seções de produtos: uma para hambúrgueres e outra para bebidas. Cada item do cardápio é representado com um checkbox, permitindo que o usuário selecione os produtos desejados. Cada checkbox contém atributos personalizados (data-nome e data-preco), armazenando o nome e o preço do item.
+
+Abaixo das opções de escolha, um botão “Adicionar ao Carrinho” chama a função JavaScript adicionarAoCarrinho(), que coleta os itens selecionados e os adiciona a um array chamado carrinho. Esse array armazena os produtos escolhidos e seus preços. O total da compra é calculado e atualizado dinamicamente na interface.
+
+A função atualizarCarrinho() exibe os itens do carrinho na lista HTML e atualiza o valor total da compra. Já a função finalizarPedido() verifica se há itens no carrinho e solicita informações do usuário, como nome, endereço e forma de pagamento. Caso todos os dados sejam preenchidos corretamente, um alerta exibe os detalhes da compra.
+
+O código combina HTML, CSS e JavaScript para criar uma experiência interativa, permitindo que os usuários escolham produtos, vejam o total da compra e finalizem o pedido de forma simples e eficiente.
+
+
+TEXTO 2
+
+Este código cria um cardápio digital interativo para um site. Ele permite que o usuário selecione itens, adicione ao carrinho e finalize o pedido.
+
+Primeiro, o código HTML define a estrutura da página e o idioma português. No cabeçalho (), ele configura a codificação de caracteres e adapta a exibição para celulares. Também há um pequeno bloco de CSS para organizar o visual.
+
+No corpo (), há um título "Cardápio" e duas categorias: Hambúrgueres e Bebidas. Cada item tem um checkbox para ser selecionado. Esses checkboxes possuem atributos com o nome e o preço do produto.
+
+Abaixo, há um botão "Adicionar ao Carrinho". Quando clicado, ele chama a função adicionarAoCarrinho(), que verifica quais itens foram escolhidos e os adiciona a uma lista chamada carrinho. Essa lista guarda os produtos e calcula o total.
+
+A função atualizarCarrinho() exibe os itens escolhidos e atualiza o preço total na tela.
+
+A função finalizarPedido() verifica se há produtos no carrinho. Se houver, pede o nome, endereço e forma de pagamento do usuário. Se tudo for preenchido corretamente, exibe uma mensagem de confirmação com os detalhes do pedido.
+
+Esse sistema usa HTML, CSS e JavaScript para criar uma experiência interativa e facilitar a escolha de produtos de forma simples.
+
+TEXTO 3 
+
+1. Criando a Estrutura com HTML:
+
+O HTML define a estrutura da página. As principais tags usadas são:
+
+<html>: Define o início da página.
+
+<head>: Contém informações sobre a página, como o título e estilos.
+
+<meta charset="UTF-8">: Define a codificação de caracteres para suportar acentos.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Ajusta a página para diferentes tamanhos de tela.
+
+<title>: Define o título da aba do navegador.
+
+<body>: Contém todo o conteúdo visível da página.
+
+<h2> e <h3>: São títulos da página.
+
+<div class="categoria">: Agrupa os produtos por categoria.
+
+<input type="checkbox">: Permite selecionar os itens do cardápio.
+
+<button>: Botões para adicionar itens ao carrinho e finalizar o pedido.
+
+<ul> e <li>: Criam a lista dos itens adicionados ao carrinho.
+
+<span>: Exibe o total do pedido.
+
+2. Estilizando com CSS:
+
+O CSS melhora a aparência da página. Algumas classes importantes são:
+
+.categoria: Define o espaçamento entre as categorias de produtos.
+
+.item: Usa display: flex; para alinhar os itens e preços.
+
+#carrinho: Define a aparência da seção do carrinho, incluindo uma borda superior.
+
+3. Adicionando Interatividade com JavaScript:
+
+O JavaScript faz com que a página responda às ações do usuário. As funções principais são:
+
+adicionarAoCarrinho():
+
+Busca os checkboxes marcados com document.querySelectorAll('.item-selecionado:checked').
+
+Cria uma lista chamada carrinho e adiciona os itens escolhidos.
+
+Soma os preços e chama atualizarCarrinho() para exibir os produtos e o total na tela.
+
+atualizarCarrinho(total):
+
+Exibe os itens do carrinho na lista HTML <ul id="lista-carrinho">.
+
+Atualiza o preço total do pedido no <span id="total">.
+
+finalizarPedido():
+
+Verifica se o carrinho está vazio.
+
+Se houver itens, pede ao usuário nome, endereço e forma de pagamento.
+
+Se todos os dados forem preenchidos, exibe uma mensagem de confirmação.
+
+TEXTO 4
+
+Se você está começando a aprender programação, este código vai te ajudar a entender como criar um cardápio digital interativo usando HTML, CSS e JavaScript. Agora, vamos refazer esse cardápio seguindo o passo a passo que um programador faria enquanto escreve o código.
+
+Passo 1: Planejamento
+
+Antes de escrever qualquer código, um programador pensa na estrutura do projeto:
+
+O site terá um título, categorias de produtos, um carrinho de compras e um botão de finalizar pedido.
+
+Será necessário um layout organizado (CSS) e funcionalidades para interagir com os itens do carrinho (JavaScript).
+
+Os arquivos serão organizados em:
+
+index.html: estrutura da página.
+
+styles.css: estilização.
+
+script.js: interatividade.
+
+Passo 2: Criando a Estrutura HTML
+
+Agora, começamos escrevendo o HTML:
+
+Criamos a estrutura básica com <html>, <head>, e <body>.
+
+Adicionamos um título <h2> chamado "Cardápio".
+
+Criamos seções para categorias de produtos (<div class="categoria">).
+
+Cada item tem um checkbox para seleção.
+
+Criamos um <button> para adicionar produtos ao carrinho.
+
+Criamos a área do <div id="carrinho"> onde os produtos escolhidos serão exibidos.
+
+Passo 3: Estilizando com CSS
+
+Agora, escrevemos o CSS (styles.css) para organizar a aparência da página:
+
+Definimos a fonte e margens básicas.
+
+Criamos a classe .categoria para separar os produtos.
+
+Aplicamos display: flex; na .item para alinhar os produtos e seus preços.
+
+Estilizamos o #carrinho com bordas e espaçamento.
+
+Passo 4: Adicionando Funcionalidades com JavaScript
+
+Agora, adicionamos a lógica para interatividade em script.js:
+
+Criamos a lista de produtos no carrinho:
+
+Usamos querySelectorAll('.item-selecionado:checked') para pegar os checkboxes marcados.
+
+Criamos uma variável carrinho para armazenar os produtos escolhidos.
+
+Calculamos o preço total.
+
+Chamamos a função atualizarCarrinho() para mostrar os itens na tela.
+
+Criamos a função atualizarCarrinho():
+
+Atualiza a <ul id="lista-carrinho"> com os produtos escolhidos.
+
+Atualiza o <span id="total"> com o valor total do pedido.
+
+Criamos a função finalizarPedido():
+
+Verifica se o carrinho está vazio.
+
+Pede nome, endereço e forma de pagamento.
+
+Exibe uma mensagem de confirmação se os dados forem preenchidos corretamente.
+
+Passo 5: Testes e Ajustes
+
+Depois de escrever o código, fazemos testes:
+
+Verificamos se os produtos são adicionados corretamente ao carrinho.
+
+Testamos o cálculo do preço total.
+
+Ajustamos a experiência do usuário conforme necessário.
+
+Resumo Final:
+
+Planejamos o projeto.
+
+Criamos a estrutura com HTML.
+
+Estilizamos com CSS.
+
+Adicionamos interatividade com JavaScript.
+
+Testamos e refinamos a experiência do usuário.
+
+Esse é o processo que um programador seguiria ao escrever um código do zero para criar um sistema de pedidos funcional e bem organizado!
+
